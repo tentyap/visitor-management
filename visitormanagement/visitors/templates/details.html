@@ -1,0 +1,46 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1>Visitor Details</h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <dl class="row">
+                    <dt class="col-sm-3">First Name:</dt>
+                    <dd class="col-sm-9">{{ visitor.first_name }}</dd>
+
+                    <dt class="col-sm-3">Last Name:</dt>
+                    <dd class="col-sm-9">{{ visitor.last_name }}</dd>
+
+                    <dt class="col-sm-3">Email:</dt>
+                    <dd class="col-sm-9">{{ visitor.email }}</dd>
+
+                    <dt class="col-sm-3">Phone:</dt>
+                    <dd class="col-sm-9">{{ visitor.phone }}</dd>
+
+                    <dt class="col-sm-3">Address:</dt>
+                    <dd class="col-sm-9">{{ visitor.address }}</dd>
+
+                    <dt class="col-sm-3">Company:</dt>
+                    <dd class="col-sm-9">{{ visitor.company }}</dd>
+
+                    <dt class="col-sm-3">Purpose:</dt>
+                    <dd class="col-sm-9">{{ visitor.purpose }}</dd>
+
+                    <dt class="col-sm-3">Check In:</dt>
+                    <dd class="col-sm-9">{{ visitor.check_in }}</dd>
+
+                    <dt class="col-sm-3">Check Out:</dt>
+                    <dd class="col-sm-9">{{ visitor.check_out }}</dd>
+
+                    <dt class="col-sm-3">Host:</dt>
+                    <dd class="col-sm-9">{{ visitor.host }}</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="my-3">
+      <a href="/visitor/" class="btn btn-outline-secondary">Back</a>
+  </div>
+{% endblock %}
